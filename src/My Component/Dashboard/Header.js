@@ -1,4 +1,4 @@
-import "../css/style.css"
+import "../css/style.css";
 function Header() {
   return (
     <div>
@@ -121,7 +121,9 @@ function Header() {
                             <span>30 minutes ago</span>
                             <h6 className="mb-0">
                               john just buy your product{" "}
-                              <strong className="text-warning">Sell $250</strong>
+                              <strong className="text-warning">
+                                Sell $250
+                              </strong>
                             </h6>
                           </a>
                         </li>
@@ -197,7 +199,7 @@ function Header() {
                     <div
                       id="DZ_W_Notification1"
                       className="widget-media dz-scroll p-3"
-                      style={{height:'380px'}}
+                      style={{ height: "380px" }}
                     >
                       <ul className="timeline">
                         <li>
@@ -210,7 +212,9 @@ function Header() {
                               />
                             </div>
                             <div className="media-body">
-                              <h6 className="mb-1">Dr sultads Send you Photo</h6>
+                              <h6 className="mb-1">
+                                Dr sultads Send you Photo
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -221,7 +225,9 @@ function Header() {
                           <div className="timeline-panel">
                             <div className="media me-2 media-info">KG</div>
                             <div className="media-body">
-                              <h6 className="mb-1">Resport created successfully</h6>
+                              <h6 className="mb-1">
+                                Resport created successfully
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -234,7 +240,9 @@ function Header() {
                               <i className="fa fa-home"></i>
                             </div>
                             <div className="media-body">
-                              <h6 className="mb-1">Reminder : Treatment Time!</h6>
+                              <h6 className="mb-1">
+                                Reminder : Treatment Time!
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -251,7 +259,9 @@ function Header() {
                               />
                             </div>
                             <div className="media-body">
-                              <h6 className="mb-1">Dr sultads Send you Photo</h6>
+                              <h6 className="mb-1">
+                                Dr sultads Send you Photo
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -262,7 +272,9 @@ function Header() {
                           <div className="timeline-panel">
                             <div className="media me-2 media-danger">KG</div>
                             <div className="media-body">
-                              <h6 className="mb-1">Resport created successfully</h6>
+                              <h6 className="mb-1">
+                                Resport created successfully
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -275,7 +287,9 @@ function Header() {
                               <i className="fa fa-home"></i>
                             </div>
                             <div className="media-body">
-                              <h6 className="mb-1">Reminder : Treatment Time!</h6>
+                              <h6 className="mb-1">
+                                Reminder : Treatment Time!
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -292,7 +306,9 @@ function Header() {
                               />
                             </div>
                             <div className="media-body">
-                              <h6 className="mb-1">Dr sultads Send you Photo</h6>
+                              <h6 className="mb-1">
+                                Dr sultads Send you Photo
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -303,7 +319,9 @@ function Header() {
                           <div className="timeline-panel">
                             <div className="media me-2 media-info">KG</div>
                             <div className="media-body">
-                              <h6 className="mb-1">Resport created successfully</h6>
+                              <h6 className="mb-1">
+                                Resport created successfully
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -316,7 +334,9 @@ function Header() {
                               <i className="fa fa-home"></i>
                             </div>
                             <div className="media-body">
-                              <h6 className="mb-1">Reminder : Treatment Time!</h6>
+                              <h6 className="mb-1">
+                                Reminder : Treatment Time!
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -333,7 +353,9 @@ function Header() {
                               />
                             </div>
                             <div className="media-body">
-                              <h6 className="mb-1">Dr sultads Send you Photo</h6>
+                              <h6 className="mb-1">
+                                Dr sultads Send you Photo
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -344,7 +366,9 @@ function Header() {
                           <div className="timeline-panel">
                             <div className="media me-2 media-danger">KG</div>
                             <div className="media-body">
-                              <h6 className="mb-1">Resport created successfully</h6>
+                              <h6 className="mb-1">
+                                Resport created successfully
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -357,7 +381,9 @@ function Header() {
                               <i className="fa fa-home"></i>
                             </div>
                             <div className="media-body">
-                              <h6 className="mb-1">Reminder : Treatment Time!</h6>
+                              <h6 className="mb-1">
+                                Reminder : Treatment Time!
+                              </h6>
                               <small className="d-block">
                                 29 July 2020 - 02:26 PM
                               </small>
@@ -423,7 +449,7 @@ function Header() {
                         </div>
                       </div>
                     </a>
-                    <div className="dropdown-menu dropdown-menu-end" >
+                    <div className="dropdown-menu dropdown-menu-end">
                       <div className="card border-0 mb-0">
                         <div className="card-header py-2">
                           <div className="products">
@@ -594,10 +620,7 @@ function Header() {
 
                             <span className="ms-2">Settings </span>
                           </a>
-                          <a
-                            href="/"
-                            className="dropdown-item ai-icon"
-                          >
+                          <a href="/" className="dropdown-item ai-icon">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="18"
