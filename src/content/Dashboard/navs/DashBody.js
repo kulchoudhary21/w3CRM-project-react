@@ -1,4 +1,5 @@
-import "../css/style.css";
+import { Link } from "react-router-dom";
+import "../../../ui/css/style.css";
 function DashBody() {
   return (
     <div className="page-titles content-body">
@@ -7,7 +8,7 @@ function DashBody() {
           <h5 className="bc-title">Dashboard</h5>
         </li>
         <li className="breadcrumb-item">
-          <a href="javascript:void(0)">
+          <Link to="/">
             <svg
               width="17"
               height="17"
@@ -29,10 +30,10 @@ function DashBody() {
               />
             </svg>
             Users Manager{" "}
-          </a>
+          </Link>
         </li>
         <li className="breadcrumb-item active">
-          <a href="javascript:void(0)">Add Roles</a>
+          <Link to="/">Add Roles</Link>
         </li>
       </ol>
     </div>

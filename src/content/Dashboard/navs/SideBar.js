@@ -1,4 +1,5 @@
-import "../css/style.css";
+import "../../../ui/css/style.css";
+import { Link } from "react-router-dom";
 function SideBar() {
   return (
     <div>
@@ -11,11 +12,7 @@ function SideBar() {
           <ul className="metismenu" id="menu">
             <li className="menu-title">YOUR COMPANY</li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="20"
@@ -39,18 +36,18 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Dashboard</span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a href="index.html">Dashboard Light</a>
+                  <Link to="/">Dashboard Light</Link>
                 </li>
                 <li>
-                  <a href="index-2.html">Dashboard Dark</a>
+                  <Link to="/">Dashboard Dark</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="employee.html" className="" aria-expanded="false">
+              <Link to="/employees" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -78,10 +75,10 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Employees</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="core-hr.html" className="" aria-expanded="false">
+              <Link to="/" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -90,6 +87,9 @@ function SideBar() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
+                    {/* Good morning 
+                    Today's work -
+                    Working on w3crm project converting it into React js */}
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
@@ -109,10 +109,10 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Core HR</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="finance.html" className="" aria-expanded="false">
+              <Link to="/" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -145,14 +145,10 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Finance</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -184,18 +180,18 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Tasks</span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a href="task.html">Tasks</a>
+                  <Link to="/">Tasks</Link>
                 </li>
                 <li>
-                  <a href="task-summary.html">Task Summary</a>
+                  <Link to="/">Task Summary</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="performance.html" className="" aria-expanded="false">
+              <Link to="/" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -221,10 +217,10 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Performance</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="project.html" className="" aria-expanded="false">
+              <Link to="/" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -262,10 +258,10 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Projects</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="reports.html" className="" aria-expanded="false">
+              <Link to="/" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -303,10 +299,10 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Reports</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="manage-client.html" className="" aria-expanded="false">
+              <Link to="/" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -346,10 +342,10 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Manage Clients</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="blog.html" className="" aria-expanded="false">
+              <Link to="/" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="24"
@@ -392,15 +388,11 @@ function SideBar() {
                 </div>
                 <span className="nav-text">Blog</span>
                 <span className="badge badge-danger badge-xs ms-1">NEW</span>
-              </a>
+              </Link>
             </li>
             <li className="menu-title">OUR FEATURES</li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="20"
@@ -450,138 +442,125 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">
-                  Apps <span className="badge badge-danger badge-xs ms-1">NEW</span>
+                  Apps{" "}
+                  <span className="badge badge-danger badge-xs ms-1">NEW</span>
                 </span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a
-                    className="has-arrow"
-                    href="javascript:void(0);"
-                    aria-expanded="false"
-                  >
+                  <Link className="has-arrow" to="/" aria-expanded="false">
                     Users Manager
-                    <span className="badge badge-danger badge-xs ms-1">NEW</span>
-                  </a>
+                    <span className="badge badge-danger badge-xs ms-1">
+                      NEW
+                    </span>
+                  </Link>
                   <ul aria-expanded="false">
                     <li>
-                      <a href="user.html">User</a>
+                      <Link to="/">User</Link>
                     </li>
                     <li>
-                      <a href="edit-profile.html">Add User</a>
+                      <Link to="/">Add User</Link>
                     </li>
                     <li>
-                      <a href="user-roles.html">Roles Listing </a>
+                      <Link to="/">Roles Listing </Link>
                     </li>
                     <li>
-                      <a href="add-role.html">Add Roles</a>
+                      <Link to="/">Add Roles</Link>
                     </li>
                     <li>
-                      <a href="app-profile-1.html">Profile 1</a>
+                      <Link to="/">Profile 1</Link>
                     </li>
                     <li>
-                      <a href="app-profile-2.html">
+                      <Link to="/">
                         Profile 2{" "}
                         <span className="badge badge-danger badge-xs ms-1">
                           NEW
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="edit-profile.html">Edit Profile</a>
+                      <Link to="/">Edit Profile</Link>
                     </li>
                     <li>
-                      <a href="post-details.html">Post Details</a>
+                      <Link to="/">Post Details</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    className="has-arrow"
-                    href="javascript:void(0);"
-                    aria-expanded="false"
-                  >
+                  <Link className="has-arrow" to="/" aria-expanded="false">
                     Customer Manager
-                    <span className="badge badge-danger badge-xs ms-1">NEW</span>
-                  </a>
+                    <span className="badge badge-danger badge-xs ms-1">
+                      NEW
+                    </span>
+                  </Link>
                   <ul aria-expanded="false">
                     <li>
-                      <a href="customer.html">Customer</a>
+                      <Link to="/">Customer</Link>
                     </li>
                     <li>
-                      <a href="customer-profile.html">Customer Profile</a>
+                      <Link to="/">Customer Profile</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="contacts.html">
+                  <Link to="/">
                     Contacts{" "}
-                    <span className="badge badge-danger badge-xs ms-1">NEW</span>
-                  </a>
+                    <span className="badge badge-danger badge-xs ms-1">
+                      NEW
+                    </span>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    className="has-arrow"
-                    href="javascript:void(0);"
-                    aria-expanded="false"
-                  >
+                  <Link className="has-arrow" to="/" aria-expanded="false">
                     Email
-                  </a>
+                  </Link>
                   <ul aria-expanded="false">
                     <li>
-                      <a href="email-compose.html">Compose</a>
+                      <Link to="/">Compose</Link>
                     </li>
                     <li>
-                      <a href="email-inbox.html">Inbox</a>
+                      <Link to="/">Inbox</Link>
                     </li>
                     <li>
-                      <a href="email-read.html">Read</a>
+                      <Link to="/">Read</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="app-calender.html">Calendar</a>
+                  <Link to="/">Calendar</Link>
                 </li>
                 <li>
-                  <a
-                    className="has-arrow"
-                    href="javascript:void(0);"
-                    aria-expanded="false"
-                  >
+                  <Link className="has-arrow" to="/" aria-expanded="false">
                     Shop
-                  </a>
+                  </Link>
                   <ul aria-expanded="false">
                     <li>
-                      <a href="ecom-product-grid.html">Product Grid</a>
+                      <Link to="/">Product Grid</Link>
                     </li>
                     <li>
-                      <a href="ecom-product-list.html">Product List</a>
+                      <Link to="/">Product List</Link>
                     </li>
                     <li>
-                      <a href="ecom-product-detail.html">Product Details</a>
+                      <Link to="/">Product Details</Link>
                     </li>
                     <li>
-                      <a href="ecom-product-order.html">Order</a>
+                      <Link to="/">Order</Link>
                     </li>
                     <li>
-                      <a href="ecom-checkout.html">Checkout</a>
+                      <Link to="/">Checkout</Link>
                     </li>
                     <li>
-                      <a href="ecom-invoice.html">Invoice</a>
+                      <Link to="/">Invoice</Link>
                     </li>
                     <li>
-                      <a href="ecom-customers.html">Customers</a>
+                      <Link to="/">Customers</Link>
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="20"
@@ -609,34 +588,30 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Charts</span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a href="chart-flot.html">Flot</a>
+                  <Link to="/">Flot</Link>
                 </li>
                 <li>
-                  <a href="chart-morris.html">Morris</a>
+                  <Link to="/">Morris</Link>
                 </li>
                 <li>
-                  <a href="chart-chartjs.html">Chartjs</a>
+                  <Link to="/">Chartjs</Link>
                 </li>
                 <li>
-                  <a href="chart-chartist.html">Chartist</a>
+                  <Link to="/">Chartist</Link>
                 </li>
                 <li>
-                  <a href="chart-sparkline.html">Sparkline</a>
+                  <Link to="/">Sparkline</Link>
                 </li>
                 <li>
-                  <a href="chart-peity.html">Peity</a>
+                  <Link to="/">Peity</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="18"
@@ -656,22 +631,22 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Bootstrap</span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a href="ui-accordion.html">Accordion</a>
+                  <Link to="/">Accordion</Link>
                 </li>
                 <li>
-                  <a href="ui-alert.html">Alert</a>
+                  <Link to="/">Alert</Link>
                 </li>
                 <li>
-                  <a href="ui-badge.html">Badge</a>
+                  <Link to="/">Badge</Link>
                 </li>
                 <li>
-                  <a href="ui-button.html">Button</a>
+                  <Link to="/">Button</Link>
                 </li>
                 <li>
-                  <a href="ui-modal.html">Modal</a>
+                  <Link to="/">Modal</Link>
                 </li>
                 <li className="extra-menu-li">
                   <ul
@@ -679,59 +654,55 @@ function SideBar() {
                     className="pt-0 extra-menu-links extra-menu-area"
                   >
                     <li>
-                      <a href="ui-button-group.html">Button Group</a>
+                      <Link to="/">Button Group</Link>
                     </li>
                     <li>
-                      <a href="ui-list-group.html">List Group</a>
+                      <Link to="/">List Group</Link>
                     </li>
                     <li>
-                      <a href="ui-card.html">Cards</a>
+                      <Link to="/">Cards</Link>
                     </li>
                     <li>
-                      <a href="ui-carousel.html">Carousel</a>
+                      <Link to="/">Carousel</Link>
                     </li>
                     <li>
-                      <a href="ui-dropdown.html">Dropdown</a>
+                      <Link to="/">Dropdown</Link>
                     </li>
                     <li>
-                      <a href="ui-popover.html">Popover</a>
+                      <Link to="/">Popover</Link>
                     </li>
                     <li>
-                      <a href="ui-progressbar.html">Progressbar</a>
+                      <Link to="/">Progressbar</Link>
                     </li>
                     <li>
-                      <a href="ui-tab.html">Tab</a>
+                      <Link to="/">Tab</Link>
                     </li>
                     <li>
-                      <a href="ui-typography.html">Typography</a>
+                      <Link to="/">Typography</Link>
                     </li>
                     <li>
-                      <a href="ui-pagination.html">Pagination</a>
+                      <Link to="/">Pagination</Link>
                     </li>
                     <li>
-                      <a href="ui-grid.html">Grid</a>
+                      <Link to="/">Grid</Link>
                     </li>
                   </ul>
-                  <a
+                  <Link
                     className="btn show-more-btn border-0"
                     data-bs-toggle="collapse"
-                    href="#collapseExample"
+                    to="/"
                     role="button"
                     aria-expanded="false"
                     aria-controls="collapseExample"
                   >
                     <span className="show-more">Show More + </span>
                     <span className="show-less">Show Less - </span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="20"
@@ -757,33 +728,33 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Plugins</span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a href="uc-select2.html">Select 2</a>
+                  <Link to="/">Select 2</Link>
                 </li>
                 <li>
-                  <a href="uc-nestable.html">Nestable</a>
+                  <Link to="/">Nestable</Link>
                 </li>
                 <li>
-                  <a href="uc-noui-slider.html">Noui Slider</a>
+                  <Link to="/">Noui Slider</Link>
                 </li>
                 <li>
-                  <a href="uc-sweetalert.html">Sweet Alert</a>
+                  <Link to="/">Sweet Alert</Link>
                 </li>
                 <li>
-                  <a href="uc-toastr.html">Toastr</a>
+                  <Link to="/">Toastr</Link>
                 </li>
                 <li>
-                  <a href="map-jqvmap.html">Jqv Map</a>
+                  <Link to="/">Jqv Map</Link>
                 </li>
                 <li>
-                  <a href="uc-lightgallery.html">Light Gallery</a>
+                  <Link to="/">Light Gallery</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="widget-basic.html" className="" aria-expanded="false">
+              <Link to="/" className="" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -827,14 +798,10 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Widget</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -873,31 +840,27 @@ function SideBar() {
                 </div>
 
                 <span className="nav-text">Forms</span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a href="form-element.html">Form Elements</a>
+                  <Link to="/">Form Elements</Link>
                 </li>
                 <li>
-                  <a href="form-wizard.html">Wizard</a>
+                  <Link to="/">Wizard</Link>
                 </li>
                 <li>
-                  <a href="form-ckeditor.html">CkEditor</a>
+                  <Link to="/">CkEditor</Link>
                 </li>
                 <li>
-                  <a href="form-pickers.html">Pickers</a>
+                  <Link to="/">Pickers</Link>
                 </li>
                 <li>
-                  <a href="form-validation.html">Form Validate</a>
+                  <Link to="/">Form Validate</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="16"
@@ -937,22 +900,18 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Table</span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a href="table-bootstrap-basic.html">Bootstrap</a>
+                  <Link to="/">Bootstrap</Link>
                 </li>
                 <li>
-                  <a href="table-datatable-basic.html">Datatable</a>
+                  <Link to="/">Datatable</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a
-                className="has-arrow "
-                href="javascript:void(0);"
-                aria-expanded="false"
-              >
+              <Link className="has-arrow " to="/" aria-expanded="false">
                 <div className="menu-icon">
                   <svg
                     width="22"
@@ -980,53 +939,49 @@ function SideBar() {
                   </svg>
                 </div>
                 <span className="nav-text">Pages</span>
-              </a>
+              </Link>
               <ul aria-expanded="false">
                 <li>
-                  <a href="/">Login</a>
+                  <Link to="/">Login</Link>
                 </li>
                 <li>
-                  <a href="page-register.html">Register</a>
+                  <Link to="/">Register</Link>
                 </li>
                 <li>
-                  <a
-                    className="has-arrow"
-                    href="javascript:void(0);"
-                    aria-expanded="false"
-                  >
+                  <Link className="has-arrow" to="/" aria-expanded="false">
                     Error
-                  </a>
+                  </Link>
                   <ul aria-expanded="false">
                     <li>
-                      <a href="page-error-400.html">Error 400</a>
+                      <Link to="/">Error 400</Link>
                     </li>
                     <li>
-                      <a href="page-error-403.html">Error 403</a>
+                      <Link to="/">Error 403</Link>
                     </li>
                     <li>
-                      <a href="page-error-404.html">Error 404</a>
+                      <Link to="/">Error 404</Link>
                     </li>
                     <li>
-                      <a href="page-error-500.html">Error 500</a>
+                      <Link to="/">Error 500</Link>
                     </li>
                     <li>
-                      <a href="page-error-503.html">Error 503</a>
+                      <Link to="/">Error 503</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="page-lock-screen.html">Lock Screen</a>
+                  <Link to="/">Lock Screen</Link>
                 </li>
                 <li>
-                  <a href="empty-page.html">Empty Page</a>
+                  <Link to="/">Empty Page</Link>
                 </li>
               </ul>
             </li>
           </ul>
           <div className="help-desk">
-            <a href="javascript:void(0)" className="btn btn-primary">
+            <Link to="/" className="btn btn-primary">
               Help Desk
-            </a>
+            </Link>
           </div>
         </div>
       </div>

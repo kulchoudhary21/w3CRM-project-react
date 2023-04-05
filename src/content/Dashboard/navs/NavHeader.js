@@ -1,4 +1,5 @@
-import "../css/style.css";
+import { Link } from "react-router-dom";
+import "../../../ui/css/style.css";
 export default function NavHeader() {
   return (
     <div>
@@ -7,7 +8,7 @@ export default function NavHeader() {
             Nav header start
         ***********************************--> */}
       <div className="nav-header">
-        <a href="index.html" className="brand-logo">
+        <Link to="/" className="brand-logo">
           <svg
             className="logo-abbr"
             width="39"
@@ -65,7 +66,7 @@ export default function NavHeader() {
               fill="white"
             />
           </svg>
-        </a>
+        </Link>
         <div className="nav-control" style={{background:'#202020'}}>
           <div className="hamburger" >
             <span className="line" style={{background:'#888888'}}></span>
